@@ -3,8 +3,8 @@ import tempfile
 import os
 from playsound import playsound
 
-PIPER_PATH = r"d:\Buddy\models\piper\piper.exe"          # <- Update if your piper.exe is in a different folder
-VOICE_PATH = r"d:\Buddy\models\piper\voices\en-us-lessac-medium.onnx"  # <- Replace with your actual voice .onnx file
+PIPER_PATH = r"d:\Buddy\models\piper\piper.exe"          
+VOICE_PATH = r"d:\Buddy\models\piper\voices\en-us-lessac-medium.onnx"  
 
 def speak(text):
     """
@@ -12,7 +12,7 @@ def speak(text):
     No simpleaudio, no build tools needed.
     """
 
-    # Create a temporary WAV file
+   
     with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_wav:
         wav_path = temp_wav.name
 
